@@ -7,13 +7,13 @@ int main()
 	cout << "Enter the size of the array: ";
 	cin >> n;
 	int arr[n];
-	cout << "Enter the array elements:" << endl;
+	cout << "Enter the array elements: ";
 	for(int i=0;i<n;++i) {
 		cin >> arr[i];
 	}
 	for(int i=0;i<n;++i) {
 		int temp;
-		if(i%2 != 0) {
+		if((i+1)%2 != 0) {
 			temp = arr[i];
 			arr[i] = arr[i+1];
 			arr[i+1] = temp;
